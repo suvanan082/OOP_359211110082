@@ -1,5 +1,7 @@
 package ooplab2;
 
+import java.util.Scanner;
+
 public class Testvariable {
     public static void main(String[] args) {
 //  integer
@@ -31,6 +33,18 @@ public class Testvariable {
         String msg = s.concat(" "+name);
         System.out.println(msg);
         System.out.println(msg.toUpperCase());
+        int age = reader.resdLine();
+        System.out.println("You are"+age+"years old");
+
+        //scanner
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("where are you from?:");
+        String address = scanner.nextLine();
+        System.out.println("you came From"+address);
+        System.out.print("What is your weight?:");
+        double weight = scanner.nextDouble();
+        System.out.println("Your weight: "+weight);
+
 
 
 
