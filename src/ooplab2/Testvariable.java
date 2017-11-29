@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Testvariable {
     public static void main(String[] args) {
 //  integer
-        int i = ;
+        int i ;
         i = 10;
         System.out.println("i=" + i);
         int j = 20;
