@@ -21,5 +21,6 @@ public class calgrade {
             else if (score<79)System.out.println("Your grade is B");
                 else System.out.println("Your grade is A");
 
+
 }//main
 }//class
