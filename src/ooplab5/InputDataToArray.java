@@ -4,6 +4,8 @@ package ooplab5;
 //3.summation data in array
 //4.average value in array
 
+import java.util.Scanner;
+
 public class InputDataToArray {
     private static final int MAX = 5;
     private static int number[] = new int[MAX];
@@ -41,4 +43,5 @@ public class InputDataToArray {
             number[i] = scanner.nextInt();
         }
     } //inputdata
+
 } //class
