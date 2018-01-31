@@ -1,14 +1,34 @@
 package ooplab8;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Person {
     private String name;
     private String gender;
-    private Date dateofBirth;
+    private Date dateOfBirth;
     private int age;
     //constructor
-    public Person(String name,String gender,Date dateofBirth,int age)
+    public Person(String name, String gender, Date dateOfBirth, int age) {
+        this.name = name;
+        this.gender = gender;
+        this.dateOfBirth = dateOfBirth;
+        this.age = age;
+    }
+    //toString()
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "name='" + name + '\'' +
+                ", gender='" + gender + '\'' +
+                ", dateOfBirth=" + dateOfBirth +
+                ", age=" + age +
+                '}';
+    }
+
+    //getter and setter methods
+
 
     public String getName() {
         return name;
@@ -26,12 +46,12 @@ public class Person {
         this.gender = gender;
     }
 
-    public Date getDateofBirth() {
-        return dateofBirth;
+    public Date getDateOfBirth() {
+        return dateOfBirth;
     }
 
-    public void setDateofBirth(Date dateofBirth) {
-        this.dateofBirth = dateofBirth;
+    public void setDateOfBirth(Date dateOfBirth) {
+        this.dateOfBirth = dateOfBirth;
     }
 
     public int getAge() {
@@ -41,15 +61,4 @@ public class Person {
     public void setAge(int age) {
         this.age = age;
     }
-    //toString()
-
-    @Override
-    public String toString() {
-        return "Person{" +
-                "name='" + name + '\'' +
-                ", gender='" + gender + '\'' +
-                ", dateofBirth=" + dateofBirth +
-                ", age=" + age +
-                '}';
-    }
-}
+}//class
